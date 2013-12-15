@@ -14,7 +14,8 @@
     "swig":"1.2.X",
     "less-middleware":"*",
     "request":"*",
-    "mpm.duration":"*"
+    "mpm.duration":"*",
+    "mpm.form":"*"
   },
   "devDependencies":{
     "mocha":"*",

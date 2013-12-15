@@ -3,7 +3,7 @@
 
 var expect = require('chai').expect;
 var assert = require('assert');
-var forms = require('../js/forms');
+var forms = require('mpm.form');
 
 describe('FORM',function(){
 	var attributes = {
