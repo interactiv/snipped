@@ -5,8 +5,8 @@ run:
 	@node_modules/.bin/node-supervisor -e 'js|less'  --ignore 'node_modules' -p 2000 app.js &
 install:
 	@npm install
-ct:
-	@bin/ci.sh
+deploy: commit
+	@git push openshift
 # command || true will ignore command errors
 commit:
 	@git add .
