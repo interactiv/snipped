@@ -1,0 +1,11 @@
+{%if formErrors %}
+<div class="alert alert-warning">
+    <h3>Errors : </h3>
+    <ul class="list-unstyled">
+        {% for key,error in formErrors %}
+            <li>{{key}} : {{ error.message}}</li>
+        {%endfor%}
+    </ul>
+</div>
+{%endif%}
+

@@ -1,7 +1,12 @@
 {% extends "layout.twig" %}
 {% block content %}
-	<h1>{{title}}</h1>
-	<p>
-		{{subtitle}}
-	</p>
+    <h2>Latest News</h2>
+    <ol class="list">
+        {% for link in links %}
+            <li class="link"><div><a target="_blank" href="{{link.url}}">{{link.title}}</a>&nbsp;<span class="text-muted">{{link.getHost()}}</span></div>
+            <div>{{link.createdAt}}</div>
+            </li>
+        {% endfor %}
+    </ol>
 {% endblock %}
+

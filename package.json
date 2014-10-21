@@ -1,26 +1,31 @@
 {
-  "name": "silex-video",
+  "name": "ggnews",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "test":"mocha"
+    "test": "jasmine-node test"
   },
   "dependencies": {
-    "express": "3.3.1",
+    "express": "~4.9.8",
     "jade": "*",
-    "underscore":"*",
-    "mongoose":"3.X",
-    "swig":"1.2.X",
-    "less-middleware":"*",
-    "request":"*",
-    "mpm.duration":"*",
-    "mpm.form":"*"
+    "q": "*",
+    "lodash": "*",
+    "mongoose": "3.X",
+    "swig": "1.2.X",
+    "less-middleware": "*",
+    "request": "*",
+    "mpm.duration": "*",
+    "mpm.form": "*",
+    "nunjucks": "~1.1.0",
+    "mpm.injector": "0.0.11",
+    "morgan": "~1.4.0",
+    "errorhandler": "~1.2.2"
   },
-  "devDependencies":{
-    "mocha":"*",
-    "chai":"*",
-    "supertest":"*",
-    "supervisor":"*"
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "supertest": "*",
+    "supervisor": "*"
   }
 }
