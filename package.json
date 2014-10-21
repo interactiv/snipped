@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "test": "jasmine-node test"
   },
   "dependencies": {
     "express": "~4.9.8",
