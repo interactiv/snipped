@@ -13,12 +13,20 @@ describe("app",function(){
     })
 	describe('GET /',function(){
 		it("is 200",function(done){
-			this.agent.get('/').expect(200,done);
+			this.agent
+                .get('/')
+                .expect(404,function(err) {
+                    //expect(err).toBe(null);
+                    done("foo");
+                });
 		});
 	});
+    /*
 	describe('GET /submit',function(){
 		it("is 200",function(done){
-			this.agent.get('/submit').expect(200,done);
+			this.agent
+                .get('/submit')
+                .expect(200,done);
 		});
 	});
     describe('POST /submit',function(){
@@ -27,9 +35,8 @@ describe("app",function(){
                 .post('/submit')
                 .field('title',"foo")
                 .field('url',"http://example.com/gamers")
-                .expect(404,function  () {
-                    done(new Error('foo'));
-                });
-        })
+                .expect(404,done);
+        });
     })
+    */
 });

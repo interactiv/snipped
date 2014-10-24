@@ -9,7 +9,7 @@ deploy: commit
 # command || true will ignore command errors
 commit:
 	@git add .
-	@git commit -am"update `date`" || true
+	@git commit -am"update ${message} `date`" |: 
 push: commit
 	@git push origin --all
 

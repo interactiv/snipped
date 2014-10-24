@@ -5,7 +5,7 @@ var container = require('./lib/container'),
 
 module.exports = container;
 if (!module.parent) {
-    http.createServer(container.get('app')).listen(container.get('port'),container.get('ip'), function(){
+    http.createServer(container.get('app')).listen(container.get('port'),function(){
         console.log('server listening on port ' + container.get('port'));
     });
 }
