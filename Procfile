@@ -1,1 +1,1 @@
-web:    java -cp target/classes:target/dependency/* HelloWorld
+web: node app.js
