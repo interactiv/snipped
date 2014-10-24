@@ -1,12 +1,11 @@
-test: ./test/*.js
-	@node_modules/.bin/mocha -u tdd
-	@make commit
+test: 
+	@NODE_ENV=testing jasmine-node test --verbose --captureExceptions &
 run: 
 	@node_modules/.bin/node-supervisor -e 'js|less'  --ignore 'node_modules' -p 2000 app.js &
 install:
 	@npm install
 deploy: commit
-	@git push openshift
+	@git push heroku
 # command || true will ignore command errors
 commit:
 	@git add .
@@ -14,4 +13,4 @@ commit:
 push: commit
 	@git push origin --all
 
-.PHONY: install run
+.PHONY: run test
