@@ -3,6 +3,8 @@ SPRINTS
 
 ##Sprint 1
 
-- [ ] an anonymous user can send a url to the application
-- [ ] url sent by users are listed on the homepage
+- [ ] a user can post a snippet
+- [ ] a user can read a snippet
+- [ ] a user can list snippets
+- [ ] a user can delete a snippet
 
