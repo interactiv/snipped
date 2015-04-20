@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-web: snipped -addr=:$PORT
-=======
-web: node app.js
->>>>>>> 95ce44ad4e933408d6634a9f38346d42ade374b2
