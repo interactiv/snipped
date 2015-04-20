@@ -1,7 +1,6 @@
 package main_test
 
 import(
-  "github.com/interactiv/snipped"
   "testing"
   "log"
 )
